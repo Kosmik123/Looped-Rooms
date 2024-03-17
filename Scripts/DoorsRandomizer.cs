@@ -27,17 +27,17 @@ namespace Bipolar.LoopedRooms
             var doors = room.Passages;
             var doorIDs = new List<PassageID>();
             foreach (var door in doors)
-                if (door)
-                    doorIDs.Add(door.Id);
+                if (door is PassageWithID)
+                    doorIDs.Add(door.ID);
 
             foreach (var door in doors)
             {
-                if (door == null)
-                    continue;
-
-                int randomIndex = Random.Range(0, doorIDs.Count);
-                door.Id = doorIDs[randomIndex];
-                doorIDs.RemoveAt(randomIndex);
+                if (door is PassageWithID passageWithID)
+                {
+                    int randomIndex = Random.Range(0, doorIDs.Count);
+                    passageWithID.SetID(doorIDs[randomIndex]);
+                    doorIDs.RemoveAt(randomIndex);
+                }
             }
         }
     }

@@ -2,32 +2,29 @@
 
 namespace Bipolar.LoopedRooms
 {
-    public class Passage : MonoBehaviour
+    public abstract class Passage : MonoBehaviour
     {
-        [SerializeField]
-        private PassageID id;
-        public PassageID Id
-        {
-            get => id;
-            set
-            {
-                id = value;
-            }
-        }
+        public abstract PassageID ID { get; }
 
         [SerializeField]
         private Transform passageTransform;
-        public Transform PassageTransform => passageTransform ? passageTransform : transform;
-        
+        public Transform PassageTransform
+        {
+            get => passageTransform ? passageTransform : transform;
+            set
+            {
+                passageTransform = value ? value : transform;
+            }
+        }
+
         public override string ToString()
         {
-            return $"Passage with ID: {id.name}";
+            return $"Passage with ID: {ID.name}";
         }
 
         private void OnValidate()
         {
-            if (passageTransform == null)
-                passageTransform = transform;
+            PassageTransform = PassageTransform;
         }
     }
 }

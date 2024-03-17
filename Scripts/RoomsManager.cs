@@ -126,8 +126,8 @@ namespace Bipolar.LoopedRooms
 
             foreach (var roomPrototype in settings.AllRoomsPrototypes)
                 foreach (var passage in roomPrototype.Passages)
-                    if (passage && passage.Id)
-                        AddPassageToRoomMapping(roomPrototype, passage.Id);
+                    if (passage && passage.ID)
+                        AddPassageToRoomMapping(roomPrototype, passage.ID);
 
             foreach (var additionalMapping in settings.AdditionalMappings)
                 foreach (var passageID in additionalMapping.Passages)
@@ -156,7 +156,7 @@ namespace Bipolar.LoopedRooms
         {
             foreach (var passage in passages)
             {
-                if (passage == null || passage.Id == null)
+                if (passage == null || passage.ID == null)
                     continue;
 
                 if (room.Connections.ContainsKey(passage))
@@ -187,7 +187,7 @@ namespace Bipolar.LoopedRooms
 
         private OtherSideData CreateRoomBehindDoor(Passage passage)
         {
-            var otherDoorID = passagesMappings[passage.Id];
+            var otherDoorID = passagesMappings[passage.ID];
             var roomPrototype = roomPrototypesByPassageID[otherDoorID];
             var room = roomsSpawner.GetRoom(roomPrototype);
             room.gameObject.SetActive(false);

@@ -5,11 +5,13 @@ namespace Bipolar.LoopedRooms
     [CreateAssetMenu(menuName = CreateAssetsPath.Root + "Passage Connection")]
     public class PassageConnection : ScriptableObject
     {
-        [SerializeField, HideInInspector]
+        [SerializeField]
+        [HideInInspector]
         private PassageID leftPassageID;
         public PassageID LeftPassageID => leftPassageID;
 
-        [SerializeField, HideInInspector]
+        [SerializeField]
+        [HideInInspector]
         private PassageID rightPassageID;
         public PassageID RightPassageID => rightPassageID;
 

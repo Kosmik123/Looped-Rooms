@@ -66,19 +66,19 @@ namespace Bipolar.LoopedRooms
             {
                 if (passage)
                 {
-                    if (passage.Id == null)
+                    if (passage.ID == null)
                     {
                         Debug.LogWarning($"Room {name} has null passage");
                         continue;
                     }
 
-                    if (passagesByID.ContainsKey(passage.Id))
+                    if (passagesByID.ContainsKey(passage.ID))
                     {
-                        Debug.LogWarning($"Room {name} has multiple {passage.Id} passages");
+                        Debug.LogWarning($"Room {name} has multiple {passage.ID} passages");
                         continue;
                     }
 
-                    passagesByID.Add(passage.Id, passage);
+                    passagesByID.Add(passage.ID, passage);
                 }
             }
         
