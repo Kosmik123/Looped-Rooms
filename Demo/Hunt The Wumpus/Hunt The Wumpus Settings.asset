@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a14388c2bdc5c43acd3aaa3a8aaa0b, type: 3}
+  m_Name: Hunt The Wumpus Settings
+  m_EditorClassIdentifier: 
+  allRoomsPrototypes:
+  - {fileID: 4770385075872127749, guid: c99704e1177b9834988126333deb0030, type: 3}
+  - {fileID: 4770385075872127749, guid: 8e8397f67881c7f4abdbbc1762c5d95d, type: 3}
+  - {fileID: 4770385075872127749, guid: 5ccc4e2c5fc468548bf3104c614b1c4c, type: 3}
+  - {fileID: 4770385075872127749, guid: 5a4b148fcedc9714aae77abf1d8ec2f9, type: 3}
+  - {fileID: 4770385075872127749, guid: 8506b9ff801a8a94cb866784f54c5bda, type: 3}
+  - {fileID: 4770385075872127749, guid: a12e70bc427f6ff4d85df0d99408e2c5, type: 3}
+  - {fileID: 4770385075872127749, guid: 6f7b6d0b7ab439f4b983c7accc869e07, type: 3}
+  - {fileID: 4770385075872127749, guid: 2953d771277727a4a933eee5a6e1d493, type: 3}
+  - {fileID: 4770385075872127749, guid: 0567a21cfcd1f3b48b6e87ddf7244d65, type: 3}
+  - {fileID: 4770385075872127749, guid: a2cfe632e7e098c4fb7f9363189d1de8, type: 3}
+  - {fileID: 4770385075872127749, guid: 80c51bbe3bebd61428deb7d5f5fa9d00, type: 3}
+  - {fileID: 4770385075872127749, guid: 92a914d38365cf441a5a0c5e7b6efc1b, type: 3}
+  - {fileID: 4770385075872127749, guid: ddb747697f3450f4c8ecd59cc24e84e6, type: 3}
+  - {fileID: 4770385075872127749, guid: 899523ed7b5d26b49a96236ec83d31cf, type: 3}
+  - {fileID: 4770385075872127749, guid: 6ae95f0815a40a14898519dd22cbf9f4, type: 3}
+  - {fileID: 4770385075872127749, guid: 420188371ad5b9c4ab7ea0137fc60522, type: 3}
+  - {fileID: 4770385075872127749, guid: dd6b2baa332feb84fab52ceed8cf8e50, type: 3}
+  - {fileID: 4770385075872127749, guid: 4b48cf29ba0ace743878b5ca8c7f6073, type: 3}
+  - {fileID: 4770385075872127749, guid: 4742a388c8ac7264394b311eeccbb3ed, type: 3}
+  - {fileID: 4770385075872127749, guid: e3eb42273a9e10e48a633a1357213dd2, type: 3}
+  passageConnections:
+  - {fileID: 11400000, guid: 7f6330f2190275b49b4ded06c84df247, type: 2}
+  - {fileID: 11400000, guid: 1767fa544fdd1eb4fa77f89cbb17d891, type: 2}
+  - {fileID: 11400000, guid: 554d9be61b7aa0a43881cff9327965a5, type: 2}
+  - {fileID: 11400000, guid: 4e2055672bd32dd419ac8d6021c999a2, type: 2}
+  - {fileID: 11400000, guid: bf4c7a736e279064dbd16d8d5817c531, type: 2}
+  - {fileID: 11400000, guid: 030bef1d9c9f80941a52d3ac94433b27, type: 2}
+  - {fileID: 11400000, guid: 14696422a39ffd34786ae3e543ffc624, type: 2}
+  - {fileID: 11400000, guid: 29355707a561aa24c96c2953e432dc66, type: 2}
+  - {fileID: 11400000, guid: d6fa98bde28961f48b1954de5412a31b, type: 2}
+  - {fileID: 11400000, guid: 8ee0379d5cb3a6245befd95265b1b5bb, type: 2}
+  - {fileID: 11400000, guid: 529fb90ac00f7d447903f03eee36d4bb, type: 2}
+  - {fileID: 11400000, guid: 9957be3832fb13b44a7395e3a5243af8, type: 2}
+  - {fileID: 11400000, guid: 4937f08c6a6ca7644b29dcf4c2a0c614, type: 2}
+  - {fileID: 11400000, guid: 3a0ce76ba1706d24f87edab3bedb728c, type: 2}
+  - {fileID: 11400000, guid: c4b5a231f7f8cd64e82767aaf28b7f1d, type: 2}
+  - {fileID: 11400000, guid: 450551007152b7a4497f1eb98b2a20c6, type: 2}
+  - {fileID: 11400000, guid: 9d3238113154d344cbdf9c191697a0b7, type: 2}
+  - {fileID: 11400000, guid: 554d0be0467f3bf4fbad68b7ed147194, type: 2}
+  - {fileID: 11400000, guid: d2387a16af3428d4392d7a2336948fbe, type: 2}
+  - {fileID: 11400000, guid: b5493b608e98b8e4ba426cf1dfdd315c, type: 2}
+  - {fileID: 11400000, guid: 064bc7c34da1e4f4782d60b1fe423ded, type: 2}
+  - {fileID: 11400000, guid: abf4c99303231fa4abbafb282c8435ee, type: 2}
+  - {fileID: 11400000, guid: fe58614684b1fb041aa0e43a426a324b, type: 2}
+  - {fileID: 11400000, guid: 5e40a4097c875e24b81331bf856c0d85, type: 2}
+  - {fileID: 11400000, guid: e683f28dac9e80848b666033ee4efd15, type: 2}
+  - {fileID: 11400000, guid: 5922c07d0c7af0b48a4b88ab96c6ed81, type: 2}
+  - {fileID: 11400000, guid: 848b372473b50d24eb73378dd4f88063, type: 2}
+  - {fileID: 11400000, guid: 69bfdc37f04ddb04cb7d53ba237739c3, type: 2}
+  - {fileID: 11400000, guid: 190a0306657c3a54ca4120432d800a4c, type: 2}
+  - {fileID: 11400000, guid: 5573229850541264a81d4886509fd37b, type: 2}
+  passageMappings: []
+  additionalMappings: []
